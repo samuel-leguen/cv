@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script type="module" src="/main.js"></script>
+  <title>Portfolio</title>
+  <link href="style.css" rel="stylesheet"/>
+  <link href="background.css" rel="stylesheet"/>
+  <link href="navbar.css" rel="stylesheet"/>
+  <link href="header.css" rel="stylesheet"/>
+  <link href="about_me.css" rel="stylesheet"/>
+  <link href="projects.css" rel="stylesheet"/>
+  <link href="work_education.css" rel="stylesheet"/>
+  <link href="skills.css" rel="stylesheet"/>
+  <link href="footer.css" rel="stylesheet"/>
+  <link href="scrolling_line.css" rel="stylesheet"/>
+  <link rel="icon" href="./public/photo_profil.ico"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+</head>
+<body>
+
+  <div class="background">
+    <img src="./public/mountain.jpg" alt="">
+  </div>
+
+  <div class="line-container">
+    <svg 
+      id="svg"
+      width="285" 
+      height="1232"
+      viewBox="0 0 285 1232"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      preserveAspectRatio="none"
+      >
+
+      <path 
+        id="path"
+        d="M193 2C307.896 122.991 317.805 187.247 193 292.5C55.6643 390.191 56.8493 453.939 193 583C319.377 753.447 278.459 798.597 193 873.5C18.556 1021.66 47.1247 1079.58 193 1164C300.6 1137.2 255.833 1086.17 220 1064H4L82.5 1134.5C108.5 1106.5 168.4 1065.4 200 1125C231.6 1184.6 192.5 1220.17 169 1230.5"
+        stroke="#FF0000"
+        stroke-width="1.5"
+        stroke-dasharray="0 2500"
+
+      />
+    </svg>
+
+  </div>
+
+    <!-- <svg preserveAspectRatio="none" viewBox="0 0 1440 5141" xmlns="http://www.w3.org/2000/svg">
+      <line id="line" x1="0" x2="100%" y1="0" y2="0" stroke="purple" stroke-width="2"></line>
+      <path id="path3" d="M886.805 0.0743205C986.888 -1.4439 1187.91 19.063 1065.22 176.635C911.848 373.6 1455.21 527.592 1367.57 373.601C1279.93 219.61 613.874 395.088 1152.86 656.514C1584.04 865.655 736.569 920.328 258.934 921.522C91.767 929.283 -164.804 1007.13 146.247 1256.43C535.061 1568.06 1238.55 1700.59 1195.7 1890.43C1152.86 2080.27 -384.754 2905.95 146.247 2905.95C1314.52 2905.95 250.102 3383.41 709.046 3545.41C849.007 3594.81 1440.94 3511.17 1410.12 3824.66C1352.7 4408.75 -60.5479 4131.44 95.6015 4451.98C290.788 4852.65 1410.12 5002.4 1440 5140" fill="none" stroke="#2BB32A" stroke-width="3" stroke-linecap="square" />
+      <path id="path" d="M886.805 0.0743205C986.888 -1.4439 1187.91 19.063 1065.22 176.635C911.848 373.6 1455.21 527.592 1367.57 373.601C1279.93 219.61 613.874 395.088 1152.86 656.514C1584.04 865.655 736.569 920.328 258.934 921.522C91.767 929.283 -164.804 1007.13 146.247 1256.43C535.061 1568.06 1238.55 1700.59 1195.7 1890.43C1152.86 2080.27 -384.754 2905.95 146.247 2905.95C1314.52 2905.95 250.102 3383.41 709.046 3545.41C849.007 3594.81 1440.94 3511.17 1410.12 3824.66C1352.7 4408.75 -60.5479 4131.44 95.6015 4451.98C290.788 4852.65 1410.12 5002.4 1440 5140" fill="none" stroke="red" stroke-linecap="square" stroke="red" stroke-width="10" stroke-dasharray="0 20000" />
+    </svg> -->
+
+ 
+
+  <!-- <div id="timeline" class="container"> -->
+    <!-- <div class="timeline"> -->
+  <!-- </div> -->
+
+  <div id="app">
+
+    <div id="navbar">
+
+      <div class="navbar_display">
+
+        <svg  
+          class="curve"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          version="1.1"
+          viewBox="0 0 1200 120"
+          preserveAspectRatio="none"
+    >
+    
+        <g class="curve-inactive-g">
+          <path 
+              id="curve-inactive"  
+              d="M 0 0 V 7.23 C 409 8 291 30 600 27 S 704 7 1200 7.23 V 0 Z"
+              fill="#2E3744"
+  
+          ></path>
+        </g>
+    
+        <g class="curve-active-g">
+          <path  
+              id="curve-active"  
+              d="M 0 0 V 7.23 C 0 65.52 268.63 112.77 600 112.77 S 1200 65.52 1200 7.23 V 0 Z"
+              fill="#2E3744"
+          ></path>
+        </g>
+    
+    </svg>
+
+        <div id="navbar_content">
+
+          <nav>
+            <input type="checkbox" id="toggle_button">
+            <label for="toggle_button">
+              <span class="material-symbols-outlined">menu</span>
+            </label>
+            <ul>
+              <li><a href="#about_me_section">&Agrave; propos</a></li>
+              <li><a href="#projects_section">Projets</a></li>
+              <li><a href="#work_education_section">Parcours</a></li>
+              <li><a href="#skills_section">Compétences</a></li>
+              <!-- <li><a href="#more_information_section">Plus d'informations</a></li> -->
+            </ul>
+          
+          </nav>
+
+          <div class="social-menu">
+
+            <div class="social-icon">
+              <a href="https://fr.linkedin.com/in/samuel-le-guen" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+              <span>Linkedin</span>
+            </div>
+
+            <div class="social-icon">
+              <a href="mailto:samuel-leguen@orange.fr"><i class="fa-solid fa-message"></i></a>
+              <span class="nowrap">samuel-leguen@orange.fr</span>
+            </div>
+
+            <div class="social-icon">
+              <a href="tel:+33761852975"><i class="fa-solid fa-phone"></i></a>
+              <span class="nowrap">07 61 85 29 75</span>
+            </div>
+
+            <div class="social-icon">
+              <a href="./public/cv.pdf" target="_blank"><i class="fa-solid fa-download"></i></a>
+              <span>CV</span>
+            </div>
+
+          </div>
+
+        </div>
+
+
+
+      </div>
+
+    </div>
+
+    <header>
+
+      <div class="header_content">
+
+        <div class="header_text hidden">
+          <h1>Samuel Le Guen</h1>
+<<<<<<< HEAD
+          <h2 style="color: var(--main-brand-color)">Ing&eacute;nieur Eau & Data</h2>
+=======
+          <h2 style="color: var(--main-brand-color)">Ing&eacute;nieur Hydraulique</h2>
+>>>>>>> f2bcccd0d00e71065c0d48940d7c62e7b5391977
+          <p class="subheading">Travaillons ensemble pour améliorer le monde de demain !</p>
+          <div class="extra_info">
+
+            <div class="situation">
+
+              <div class="location">
+                <img src="./public/location.svg" alt="">
+                <p>France, Chambéry</p>
+              </div>
+
+              <div class="available">
+                <img src="./public/ear.svg" alt="">
+                <p>A l'écoute d'opportunités</p>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+        <div class="circle hidden">
+          <img src="./public/photo_profil.png" alt="">
+        </div>
+      </div>
+
+    </header>
+
+    <div class="spacer s1"></div>
+             
+    <section id="about_me_section">
+      <div class="blob_container">
+        <svg
+          viewBox="0 0 900 900"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g>
+              <path
+                  id="blob1"
+                  d="M 0 0 H 900 V 900 H 0 V 0 Z M 781 338 C 804 257 803 148 749 97 C 705 55 626 52 537 48 C 517 47 495 46 473 44 C 454 43 434 41 415 40 C 320 31 229 23 179 64 C 126 109 120 211 115 311 C 115 323 114 335 113 347 C 112 364 111 380 110 396 C 104 487 98 569 126 641 C 159 726 238 798 333 837 C 428 876 539 883 597 826 C 637 786 651 715 665 646 C 671 617 677 588 684 561 C 697 517 716 482 734 447 C 752 413 769 379 781 338 Z"
+                  fill="#232933"
+              />
+              <!-- d="M 0 0 H 900 V 900 H 0 V 0 Z M 781 338 C 804 257 803 148 749 97 C 705 55 626 52 537 48 C 517 47 495 46 473 44 C 454 43 434 41 415 40 C 320 31 229 23 179 64 C 126 109 120 211 115 311 C 115 323 114 335 113 347 C 112 364 111 380 110 396 C 104 487 98 569 126 641 C 159 726 238 798 333 837 C 428 876 539 883 597 826 C 637 786 651 715 665 646 C 671 617 677 588 684 561 C 697 517 716 482 734 447 C 752 413 769 379 781 338 Z" -->
+              <!-- d="M0 0H900V900H0V0ZM807.118 376.428C774.218 280.128 741.818 197.028 681.818 152.628C621.918 108.128 534.518 102.328 444.018 98.628C353.518 94.928 259.818 93.328 213.718 140.228C184.69 169.634 174.414 218.226 162.252 275.736C155.058 309.755 147.204 346.894 134.418 385.028C124.196 415.636 110.794 446.892 97.5947 477.674C66.5061 550.177 36.5452 620.05 51.9183 672.628C73.8183 747.428 187.618 787.128 290.218 799.028C392.718 810.828 484.018 794.928 585.018 772.428C685.918 749.928 796.418 721.028 835.018 651.728C873.518 582.428 840.018 472.728 807.118 376.428Z" -->
+                  
+          </g>
+
+          <g style="visibility:hidden">
+              <path
+                  id="blob2"
+                  d="M 0 0 H 900 V 900 H 0 V 0 Z M 781 338 C 804 257 803 148 749 97 C 705 55 626 52 537 48 C 392 249 495 46 473 44 C 454 43 434 41 415 40 C 320 31 229 23 350 316 C 126 109 120 211 115 311 C 115 323 114 335 113 347 C 112 364 111 380 110 396 C 227 496 98 569 126 641 C 159 726 238 798 333 837 C 428 876 539 883 392 581 C 637 786 651 715 665 646 C 671 617 677 588 684 561 C 697 517 716 482 542 311 C 752 413 769 379 781 338 Z"
+                  fill="#232933"
+              />
+          </g>
+        </svg>
+      </div>
+        <!-- <img class="hidden" src="./public/photo_profil4.png" alt=""> -->
+      <div class="about_me_container hidden">
+        <h2>&Agrave; propos de moi</h2>
+        <!-- <p id="about_me_text" class="text"></p> -->
+        <p>Je m'appelle Samuel, j'ai 28 ans, et j'habite en Savoie depuis maintenant 7 ans. Je suis ingénieur hydraulique formé à l'ENGEES, et j'ai travaillé chez Veolia et pour EDF Hydro en tant que sous-traitant. Curieux et polyvalent, j'aime trouver des solutions innovantes aux problèmes et optimiser les tâches répétitives. Grâce à mes expériences, je me suis formé de façon autodidacte tant que Data Sientist avec les données. Je suis très à l'aise avec les données leur traitement et leur visualisation. Souhaitant diversifier mes compétences, j'ai recemment passé le diplôme de maître nageur sauveteur et je m'entraine actuellement pour passer le diplôme de pisteur secouriste.</p>
+      </div>
+
+    </section>
+
+
+    <div class="spacer s2"></div>
+
+    <section id="projects_section">
+      <div class="projects_container hidden">
+        <h2>Projets sélectionnés</h2>
+        <div class="projects_content">
+          
+          <div id="gtv2" class="project_box animated">
+            <div class="project_head">
+              <div class="project_title">
+                <h3>Grands Travaux Voiries (GTV2)</h3>
+                <span>•</span>
+                <a href="#veolia" class="href veolia">VEOLIA</a>
+              </div>
+    
+              <div class="project_subtitle">
+                <h4>Janvier 2020 - Mai 2021</h4>
+              </div>
+            </div>
+            <div class="project_content animated">
+              <p id="project1_text" class="text"></p>
+              <div class="project_skills">
+                <a href="#python"><img src="./public/python.svg" alt=""></a>
+                <a href="#html_css_js"><img src="./public/javascript.svg" alt=""></a>
+                <a href="#gitlab"><img src="./public/gitlab.svg" alt=""></a>
+                <a href="#oracle"><img src="./public/oracle.svg" alt=""></a>
+                <a href="#fme"><img src="./public/fme.svg" alt=""></a>
+              </div>
+            </div>
+          </div>
+
+          <div id="sept_laux" class="project_box animated">
+            <div class="project_head">
+              <div class="project_title">
+                <h3>Lacs des Septs Laux</h3>
+                <span>•</span>
+                <a href="#segula" class="href segula">SEGULA</a>
+              </div>
+              <div class="project_subtitle">
+                <h4>Mars 2017 - Decembre 2018</h4>
+              </div>
+
+            </div>
+
+            <div class="project_content animated">
+              <p id="project2_text" class="text"></p>
+              <div class="project_skills">
+                <a href="#python"><img src="./public/python.svg" alt=""></a>
+                <a href="#r"><img src="./public/r.svg" alt=""></a>
+                <a href="#delft3d"><img src="./public/delft.svg" alt=""></a>
+                <a href="#qgis"><img src="./public/qgis.svg" alt=""></a>
+              </div>
+            </div>
+
+          </div>
+          <div id="reppop" class="project_box animated">
+            <div class="project_head">
+              <div class="project_title">
+                <h3>RéPPOP 73</h3>
+                <span>•</span>
+                <a href="#grand_lac" class="href grand_lac">GRAND LAC</a>
+              </div>
+              <div class="project_subtitle">
+                <h4>Janvier 2023 - Avril 2023</h4>
+              </div>
+            </div>
+            
+            <div class="project_content animated">
+              <p id="project3_text" class="text"></p> </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <div class="spacer s3"></div> 
+
+    <section id="work_education_section" >
+      <h2>Parcours</h2>
+      <!-- <div class="line"></div> -->
+      <div class="work_education_container">
+        
+        <div id="grand_lac" class="box b1 hidden">
+          <!-- <div class="bead"></div> -->
+          <div class="box-logo-container blc4">
+            <img class="box-logo" src="./public/ipso.webp" alt="">
+            <img class="box-logo" src="./public/grandlac.svg" alt="">
+            <!-- <img class="box-logo" src="./public/aqualac.png" alt=""> -->
+          </div> 
+          <div class="content">
+            <div class=content-head>
+              <h4>Juillet 2022 - Septembre 2023</h4>
+              <h3>Maître nageur sauveteur   •   GRAND LAC</h3>
+  
+            </div>
+            <p id="exp4_text" class="text"></p>
+            <div class="location">
+              <img src="./public/location.svg" alt="">
+              <p>France, Aix-les-bains</p>
+            </div>  
+          </div> 
+        </div>
+
+        <div id="veolia" class="box b1 hidden">
+          <!-- <div class="bead"></div> -->
+          <div class="box-logo-container blc3">
+            <img class="box-logo" src="./public/egl.png" alt="">
+            <img class="box-logo" src="./public/veolia.png" alt="">
+          </div>
+          <div class="content">
+            <div class=content-head>
+              <h4>Mars 2019 - Mai 2021</h4>
+              <h3>Ingénieur Hydraulique & Projets   •   VEOLIA</h3>
+            </div>
+            <p id="exp3_text" class="text"></p>
+            <div class="location">
+              <img src="./public/location.svg" alt="">
+              <p>France, Lyon</p>
+            </div>          
+          </div> 
+
+        </div>
+
+        <div id="segula" class="box b1 hidden">
+          <!-- <div class="bead"></div> -->
+          <div class="box-logo-container blc2">
+            <img class="box-logo" src="./public/segula.png" alt="">
+            <img class="box-logo" src="./public/edf.svg" alt="">
+          </div>   
+          <div class="content">
+            <div class=content-head>
+              <h4>Mars 2017 - Décembre 2018</h4>
+              <h3>Ingénieur R&D   •   SEGULA</h3>
+
+            </div>
+            <p id="exp2_text" class="text"></p>
+            <div class="location">
+              <img src="./public/location.svg" alt="">
+              <p>France, Chambéry</p>
+            </div>  
+          </div> 
+        </div>
+
+        <div id="icube" class="box b1 hidden">
+          <!-- <div class="bead"></div> -->
+          <div class="box-logo-container blc1">
+            <img class="box-logo" src="./public/icube.png" alt="">
+          </div>  
+          <div class="content">
+            <div class=content-head>
+              <h4>Mai 2016 - Juillet 2016</h4>
+              <h3>Stage de recherche   •   ICube </h3>
+ 
+            </div>
+            <p id="exp1_text" class="text"></p>
+            <div class="location">
+              <img src="./public/location.svg" alt="">
+              <p>France, Strabourg</p>
+            </div>  
+          </div> 
+        </div>
+
+        <div id="mni" class="box b2 edu hidden">
+          <!-- <div class="bead"></div> -->
+          <div class="box-logo-container blc1">
+            <img class="box-logo" src="./public/univ_strasbourg.png" alt="">
+          </div>   
+          <div class="content">
+
+            <div class=content-head>
+              <h4>Septembre 2016 - Août 2017</h4>
+              <h3>Master MNI   •   Faculté de physique & Ingénierie de Strasbourg</h3>
+
+            </div>
+            <p id="edu3_text" class="text"></p>
+            <div class="location">
+              <img src="./public/location.svg" alt="">
+              <p>France, Strasbourg</p>
+            </div>  
+          </div> 
+        </div>
+
+        <div id="engees" class="box b2 edu hidden">
+          <!-- <div class="bead"></div> -->
+          <div class="box-logo-container blc1">
+            <img class="box-logo" src="./public/engees.png" alt="">
+          </div>   
+          <div class="content">
+            <div class=content-head>
+              <h4>Septembre 2014 - Août 2017</h4>
+              <h3>ENGEES</h3>
+
+            </div>
+            <p id="edu2_text" class="text"></p>
+            <div class="location">
+              <img src="./public/location.svg" alt="">
+              <p>France, Strabourg</p>
+            </div>  
+          </div> 
+        </div>
+
+        <div id="bcpst" class="box b2 edu hidden">
+          <!-- <div class="bead"></div> -->
+          <div class="box-logo-container blc1">
+            <img class="box-logo" src="./public/bcpst.png" alt="">
+          </div>   
+          <div class="content">
+
+            <div class=content-head>
+              <h4>Septembre 2012 - Septembre 2014</h4>
+              <h3>BCPST   •   Lycée Pothier</h3>
+            </div>
+            <p id="edu1_text" class="text"></p>
+            <div class="location">
+              <img src="./public/location.svg" alt="">
+              <p>France, Orléans</p>
+            </div>  
+          </div> 
+        </div>
+              
+        </div>
+      </div>
+    </section>
+
+
+    <div class="spacer s4"></div>
+
+
+    <section id="skills_section" >
+      <h2>Comp&eacute;tences</h2>
+
+      <div class="skills_category_head">
+        <h3>Back-end</h3>
+      </div>
+      
+      <div class="grid_techno_container">
+
+        <div id="python" class="grid_techno hidden">
+          <img src="./public/python.svg" alt="">
+          <div>
+            <h4>Python</h4>
+            <p>Niveau avancé • BattleDev • Dash</p>
+            <div class="exp_origine_list">
+              <a class="href personnel">Personnel</a>
+              <a href="#segula" class="href segula">SEGULA</a>
+              <a href="#veolia" class="href veolia">VEOLIA</a>
+            </div>
+          </div>
+        </div>
+
+        <div id="r" class="grid_techno hidden">
+          <img src="./public/r.svg" alt="">
+          <div>
+            <h4>R</h4>
+            <p>Niveau intermédiaire • Shiny </p>
+            <div class="exp_origine_list">
+              <a href="#segula" class="href segula">SEGULA</a>
+              <a href="#veolia" class="href veolia">VEOLIA</a>
+            </div>
+          </div>
+        </div>
+
+        <div id="oracle" class="grid_techno hidden">
+          <img src="./public/oracle.svg" alt="">
+          <div>
+            <h4>Oracle SQL</h4>
+            <p>Niveau intermédiaire</p>
+            <div class="exp_origine_list">
+              <a href="#veolia" class="href veolia">VEOLIA</a>
+            </div>
+          </div>
+        </div>
+
+        <div id="html_css_js" class="grid_techno hidden">
+          <img src="./public/html_css_js.png" alt="">
+          <div>
+            <h4>HTML / CSS / JavaScript</h4>
+            <p>Débutant (3 mois) • pour ce site</p>
+            <div class="exp_origine_list">
+              <a class="href personnel">Personnel</a>
+            </div>
+          </div>
+        </div>
+
+        <div id="vba" class="grid_techno hidden">
+          <img src="./public/vba.svg" alt="">
+          <div>
+            <h4>VBA</h4>
+            <p>Niveau avancé</p>
+            <div class="exp_origine_list">
+              <a class="href personnel">Personnel</a>
+              <a href="#engees" class="href engees">ENGEES</a>
+              <a href="#veolia" class="href veolia">VEOLIA</a>
+            </div>
+          </div>
+        </div>
+
+        <div id="gitlab" class="grid_techno hidden">
+          <img src="./public/gitlab.svg" alt="">
+          <div>
+            <h4>Gitlab</h4>
+            <p>Niveau intermédiaire</p>
+            <div class="exp_origine_list">
+              <a href="#veolia" class="href veolia">VEOLIA</a>
+            </div>
+          </div>
+        </div>
+
+        <div id="arcgis" class="grid_techno hidden">
+          <img src="./public/esri.svg" alt="">
+          <div>
+            <h4>ArcGis</h4>
+            <p>Niveau intermédiaire</p>
+            <div class="exp_origine_list">
+              <a href="#engees" class="href engees">ENGEES</a>
+              <a href="#veolia" class="href veolia">VEOLIA</a>
+            </div>
+          </div>
+        </div>
+
+        <div id="qgis" class="grid_techno hidden">
+          <img src="./public/qgis.svg" alt="">
+          <div>
+            <h4>QGIS</h4>
+            <p>Débutant</p>
+            <div class="exp_origine_list">
+              <a href="#segula" class="href segula">SEGULA</a>
+            </div>
+          </div>
+        </div>
+
+        <div id="fme" class="grid_techno hidden">
+          <img src="./public/fme.svg" alt="">
+          <div>
+            <h4>FME</h4>
+            <p>Niveau intermédiaire</p>
+            <div class="exp_origine_list">
+              <a href="#veolia" class="href veolia">VEOLIA</a>
+            </div>
+          </div>
+        </div>
+
+        <div id="synergi" class="grid_techno hidden">
+          <img src="./public/synergi.svg" alt="">
+          <div>
+            <h4>Synergi Liquid</h4>
+            <p>Niveau avancé</p>
+            <div class="exp_origine_list">
+              <a href="#veolia" class="href veolia">VEOLIA</a>
+            </div>
+          </div>
+        </div>
+
+        <div id="epanet" class="grid_techno hidden">
+          <img src="./public/epa.svg" alt="">
+          <div>
+            <h4>EPANET</h4>
+            <p>Niveau intermédiaire</p>
+            <div class="exp_origine_list">
+              <a href="#engees" class="href engees">ENGEES</a>
+              <a href="#veolia" class="href veolia">VEOLIA</a>
+            </div>
+          </div>
+        </div>
+
+        <div id="porteau" class="grid_techno hidden">
+          <img src="./public/irstea.svg" alt="">
+          <div>
+            <h4>Porteau</h4>
+            <p>Débutant</p>
+            <div class="exp_origine_list">
+              <a href="#engees" class="href engees">ENGEES</a>
+            </div>
+          </div>
+        </div>
+
+        <div id="delft3d" class="grid_techno hidden">
+          <img src="./public/delft.svg" alt="">
+          <div>
+            <h4>Delft3D Flow</h4>
+            <p>Niveau avancé</p>
+            <div class="exp_origine_list">
+              <a href="#segula" class="href segula">SEGULA</a>
+            </div>
+          </div>
+        </div>
+
+        <div id="hecras" class="grid_techno hidden">
+          <img src="./public/hecras.svg" alt="">
+          <div>
+            <h4>HEC-RAS</h4>
+            <p>Niveau intermédiaire</p>
+            <div class="exp_origine_list">
+              <a href="#engees" class="href engees">ENGEES</a>
+              <a href="#segula" class="href segula">SEGULA</a>
+            </div>
+          </div>
+        </div>
+
+        <div id="openfoam" class="grid_techno hidden">
+          <img src="./public/openfoam.svg" alt="">
+          <div>
+            <h4>Open Foam</h4>
+            <p>Niveau intermédiaire</p>
+            <div class="exp_origine_list">
+              <a href="#engees" class="href engees">ENGEES</a>
+              <a href="#mni" class="href mni">MNI</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      
+      
+
+
+        
+
+        <!-- <div id="techno4" class="grid_techno">
+          <img src="./public/fluent.png" alt="">
+          <div>
+            <h4>Fluent</h4>
+            <p>Débuté en 2017</p>
+            <div class="exp_origine_list">
+              <a class="href personnel">Personnel</a>
+              <a href="#engees" class="href engees">ENGEES</a>
+              <a href="#veolia" class="href veolia">VEOLIA</a>
+            </div>
+          </div>
+        </div> -->
+
+
+    </section>
+
+
+    <div class="spacer s5"></div>
+
+
+    <footer id="more_information_section" >
+      <h2>Plus d'informations</h2>
+      <div class="grid_container">
+        <div id="item1" class="grid_item">
+          <img src="./public/linkedin.svg" alt="">
+          <div>
+            <h3>Linkedin</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elitrem!</p>
+          </div>
+        </div>
+
+        <div id="item2" class="grid_item">
+          <img src="./public/mail.svg" alt="">
+          <h3>Contact</h3>
+        </div>
+
+        <div id="item3" class="grid_item">
+          <img src="./public/download.svg" alt="">
+          <div>
+            <h3>Téléchargement du CV</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit</p>
+          </div>
+        </div>
+
+      </div>
+    </footer>
+
+<script type="module" src="./main.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/kute.js@2.2.4/dist/kute.min.js"></script>
+</script>
+
+</body>
+</html>

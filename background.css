@@ -1,0 +1,23 @@
+.background {
+    position: fixed;
+    height:800px;
+    width:auto;
+    top:0;
+    left:-375px;
+    /* left:-800px; */
+    z-index:-2;
+    aspect-ratio: 2560 / 1440;
+}
+
+.background img {
+    height:100%; 
+    width:100%;
+    aspect-ratio: 2560 / 1440;
+}
+
+@media only screen and (max-width : 768px) {
+    .background{
+        display: none;
+    }
+}
+

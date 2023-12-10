@@ -1,0 +1,3 @@
+Les lacs d'altitudes, de part leur isolement, sont peu impactés par l'homme. En revanche ils sont extremement sensibles aux modifications du climat. Ces lacs, considérés des "témoins" du changement climatique, sont activement suivis par le réseau "Lacs Sentinelles" (OFB, Unil, CARTTEL, EDF) 
+
+Dans le cadre de la thèse réalisée Yann Guénand, visant à mieux comprendre le cycle du carbone sur les lacs des Sept Laux (notamment les lacs Corne, Blanc, et Cos), j'ai participé aux campagnes de mesures terrains, à l'analyse et au traitement des données, à la construction et au calage de modèles hydrauliques et biogéochimiques avec Delft3D, à la visualisation et l'analyse des résultats obtenus (R & Python) et au partage des conclusions auprès du réseau Sentinelle.

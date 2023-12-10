@@ -1,0 +1,2 @@
+Etudes hydrauliques en eau potable sur le Grand Lyon.
+Pilote de projet dans le développement d'outils informatiques & l'analyse de données.

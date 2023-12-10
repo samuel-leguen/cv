@@ -1,0 +1,227 @@
+#navbar {
+    position: fixed;
+    width:100%;
+    height: 120px;
+    top:0;
+    left:0;
+    /* background: red; */
+    z-index:1;
+    padding: 0;
+}
+
+.navbar_display{
+    /* background: red; */
+    /* padding: 20px; */
+    /* display: flex; */
+    /* justify-content: center; */
+    /* gap: 50px; */
+    /* overflow:visible; */
+    /* background-image: url(./public/nav_curve.svg); */
+    /* background-repeat: no-repeat; */
+    /* background-size: cover; */
+    /* background-position: center; */
+    /* background-color: grey; */
+    /* opacity:0.2;*/
+    /* transition: .5s; */
+}
+
+#navbar_content, .curve {
+    position: absolute;
+    left:50%;
+    transform: translateX(-50%);
+    width: 100%;
+    justify-content: center;
+}
+
+.curve {
+    height: 100%;
+    /* top:-50px */
+}
+
+.curve-active-g {
+    visibility: hidden;
+}
+
+.curve-inactive-g {
+    visibility: visible
+}
+
+#navbar_content {
+    top:0;
+    display: flex;
+    padding: 40px;
+    transition: .5s ease-in-out;
+    opacity: 0;
+}
+
+
+
+nav{
+    display:flex;
+    align-items: center;
+    gap: 50px;
+    /* background: blue; */
+    /* width: 100%; */
+    /* overflow: hidden; */
+    /* padding-top: 0; */
+    /* background: blue; */
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    gap:50px;
+    /* align-items:center */
+}
+
+nav a{
+    color: var(--secondary-text-color);
+    text-decoration: none;
+    position: relative;
+    padding: 3px;
+}
+
+#toggle_button {
+display:none;
+}
+
+label[for="toggle_button"] {
+display:none;
+}
+
+label[for="toggle_button"] span{
+font-size: 40px;
+}
+
+.social-menu {
+
+    display: flex;
+    /* background: green; */
+    align-items: center;
+    justify-content: center;
+    width: 250px
+    /* gap: 25px; */
+    /* padding-top: 10px; */
+}
+
+.social-icon {
+    position: relative
+}
+
+.social-icon a {
+display: inline-block;
+width: 40px;
+height: 40px;
+background: var(--secondary-color);
+border-radius: 50%;
+text-align: center;
+margin: 0 8px;
+/* box-shadow: 0 4px 4px rgba(0,0,0,.3); */
+transform: translateY(0) scale(1);
+transition: .3s;
+
+}
+
+.social-icon i {
+font-size: 20px;
+color: white;
+line-height: 40px;
+}
+
+.social-icon span {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    font-size: 16px;
+    transition: .3s;
+    font-weight: 400;
+    color: var(--secondary-text-color);
+}
+
+.nowrap {white-space: nowrap;}
+
+
+
+@media (min-width: 768px) {
+
+    .social-icon:hover a {
+        transform: translateY(-6px) scale(1.2);
+        margin: 0 20px;
+        background: var(--main-brand-color);
+        }
+
+    nav a:hover{
+        color: var(--text-color);
+    }
+    
+    nav a::after{
+        content: "";
+        height: 2px;
+        width:0;
+        background: var(--main-brand-color);
+        position: absolute;
+        bottom:0;
+        left:0;
+        transition: 150ms ease-in-out;
+    }
+    
+    nav a:hover::after{
+        width:100%;
+    }
+
+
+    .social-icon:hover span {
+        transform: translate(-50%, 80%) scale(1);
+        }
+    #navbar:hover #navbar_content {
+        opacity:1;
+        transition: .7s;
+    }
+}
+
+
+@media only screen and (max-width : 768px) {
+
+/* .social-menu {
+    justify-content: center;
+} */
+
+#navbar_content {
+    opacity:1
+}
+
+.curve-active-g {
+    visibility: visible;
+}
+
+.curve-inactive-g {
+    visibility: hidden;
+}
+
+
+.social-icon:hover a {
+    margin: 0 8px;
+}
+
+nav{
+    position: absolute;
+    top:0;
+    left:0;
+    background: var(--secondary-color);
+    padding: 15px;
+    border-radius: 0 0 25px 0;
+    z-index:1
+}
+
+nav ul{
+    display: none;
+    flex-direction: column;
+}  
+#toggle_button:checked ~ ul{
+    display: block;
+}
+label[for="toggle_button"] {
+    display:block;
+}
+}

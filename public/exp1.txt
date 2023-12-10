@@ -1,0 +1,3 @@
+Stage de recherche : « Étude du champ de vitesse en canaux composés ».
+Conception et mise en application d’un protocole expérimental.
+Traitement des données et analyse statistique (Matlab).

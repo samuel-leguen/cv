@@ -1,0 +1,227 @@
+#skills_section{
+    background-color: var(--primary-color);
+    padding: 25px 0;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    gap: 70px;
+    /* flex-wrap: wrap; */
+    flex-direction: column;
+}
+
+
+.skills_category_head {
+    position: relative;
+    display: flex;
+    width: 70%;
+    flex-direction: column;
+    /* height: 0px; */
+    gap:10px;
+    display: none; 
+}
+
+.skills_category_head h3 {
+    
+}
+
+.skills_category_head::after{
+    content: "";
+    /* position: absolute; */
+    /* z-index:2; */
+    /* left: calc(50% - 1px); */
+    width: 70px;
+    height: 4px;
+    /* left:0; */
+    right:100%;
+    background-color: var(--main-brand-color);
+}
+
+.grid_techno_container p {
+    font-weight: 400;
+    color: var(--secondary-text-color)
+    /* font-size:10px */
+}
+
+
+.href {
+    font-size: 12px;
+}
+
+.personnel {
+    color: #38bdf8
+}
+
+.engees {
+    color: #22c55e
+}
+
+.mni  {
+    color: cyan
+}
+
+.veolia {
+    color: #fb7185
+}
+
+.segula {
+    color: rgb(229, 168, 55)   
+}
+
+.grand_lac {
+    color: rgb(185, 100, 185)   
+}
+
+.grid_techno_container {
+    /* margin: 60px auto; */
+    max-width: 70%;
+    width: 1500px;
+    padding-top: 0;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 200px;
+    gap: 20px;
+    grid-template-areas:
+    "techno1 techno2 techno3"
+    "techno4 techno5 techno6"
+    "techno7 techno8 techno9"
+    "techno10 techno11 techno12"
+    "techno13 techno14 techno15"
+    ;
+}
+
+.grid_techno{
+    background-color: var(--light-secondary-color);
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    text-align: center;
+    padding: 10px;
+    /* gap: 10px; */
+    flex-direction: column;
+    border-radius: .5rem;
+}
+
+.grid_techno img {
+    height: 75px;
+    width: auto;
+    align-self: center;
+}
+
+.grid_techno h4 {
+    font-size: 20px;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+
+.exp_origine_list{
+    display:flex;
+    /* flex-direction: row; */
+    /* flex-direction: column; */
+    justify-content: space-evenly;
+    gap:10px
+}
+
+.exp_origine_list a{
+    /* color: white; */
+    text-transform: uppercase;
+    text-decoration: unset;
+}
+
+/* @media(max-width: 800px){
+    .grid_techno_container{
+        grid-template-columns: 1fr;
+        grid-template-rows: 200px 100px 100px;
+        grid-template-areas:
+        "techno1"
+        "techno2"
+        "techno3";
+    }
+} */
+
+@media(max-width: 1200px){
+    .grid_techno_container{
+        grid-template-columns:1fr 1fr;
+        grid-template-rows: 200px;
+        grid-template-areas:
+        "techno1 techno2"
+        "techno2 techno4"
+        "techno5 techno6"
+        "techno7 techno8"
+        "techno9 techno10"
+        "techno11 techno12"
+        "techno13 techno14"
+        "techno15"
+        ;
+    }
+}
+
+@media(max-width: 800px){
+    .grid_techno_container{
+        grid-template-columns: 1fr;
+        grid-template-rows: 200px;
+        grid-template-areas:
+        "techno1"
+        "techno2"
+        "techno3"
+        "techno4"
+        "techno5"
+        "techno6"
+        "techno7"
+        "techno8"
+        "techno9"
+        "techno10"
+        "techno11"
+        "techno12"
+        "techno13"
+        "techno14"
+        "techno15"
+    }
+}
+
+#python{
+    grid-area: techno1;
+}
+#r{
+    grid-area: techno2;
+}
+#oracle{
+    grid-area: techno3;
+}
+#html_css_js{
+    grid-area: techno4;
+}
+#vba{
+    grid-area: techno5;
+}
+#gitlab{
+    grid-area: techno6;
+}
+#arcgis{
+    grid-area: techno7;
+}
+#qgis{
+    grid-area: techno8;
+}
+#fme{
+    grid-area: techno9;
+}
+#synergi{
+    grid-area: techno10;
+}
+#epanet{
+    grid-area: techno11;
+}
+#porteau{
+    grid-area: techno12;
+}
+#delft3d{
+    grid-area: techno13;
+}
+#hecras{
+    grid-area: techno14;
+}
+#openfoam{
+    grid-area: techno15;
+}

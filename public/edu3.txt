@@ -1,0 +1,3 @@
+Formation visant à former des spécialistes de la simulation numérique en vue d'applications
+industrielles et environnementales (modélisation hydraulique/aéraulique, propagation de
+contaminant, programmation)

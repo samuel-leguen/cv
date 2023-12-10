@@ -1,0 +1,220 @@
+#work_education_section{
+    padding: 25px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    flex-wrap: wrap;
+    background-color: var(--secondary-color);
+}
+
+#work_education_section h2{
+    text-align: center;
+}
+
+
+.work_education_container{
+    display: flex;
+    flex-direction: column;
+    width: 1300px;
+    max-width: 90%;
+       /* margin:0 auto; */
+    /* padding-bottom: 500px; */
+
+}
+
+
+
+
+/* Extremités rondes des lignes
+.line::before, .line::after{
+    position: absolute;
+    display: block;
+    content:'';
+    height: 1rem;
+    width: 1rem;
+    border-radius: 50%;
+    background-color: white;
+    left:50%;
+    transform: translateX(-50%);
+}
+
+.line::after{
+    bottom :0
+} */
+
+.box{
+    position: relative;
+    display: flex;
+    margin: 20px 0;
+    gap:20px;
+    /* background-color: green; */
+    
+
+}
+
+.content-head {
+    display: flex;
+    flex-direction: column;
+}
+
+.box-logo-container {
+    display: flex;
+    align-items: center;
+    padding: .2rem;
+    gap: 1rem;
+    opacity:0.7;
+    position: absolute;
+    
+}
+
+.box-logo {
+    /* height: 150px; */
+    width: 150px;    
+}
+
+.box:nth-child(odd) .box-logo-container {
+
+    top: 50%;
+    left: 25%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.box:nth-child(even) .box-logo-container {
+    top: 50%;
+    left: 75%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+
+.blc3 {
+    flex-direction: column;
+}
+
+.box:nth-child(odd) {
+    flex-direction: row-reverse
+    /* transform: translateX(100%) */
+}
+
+/* Point de position sur la ligne de chaque section */
+/* .bead{
+    position: absolute;
+    display:block;
+    height: 1rem;
+    width: 1rem;
+    border-radius: 50%;
+    background-color: white;
+    left: 50%;
+    top: 20%;
+    transform : translate(-50%)
+} */
+
+.content {
+    width: calc(53%);
+    display: flex;
+    flex-direction: column;
+    background-color: var(--light-secondary-color);
+    /* padding: 2rem 5rem ; */
+    padding: 2% 5%;
+    border-radius: 1rem;
+    gap: 8px
+}
+
+.edu .content {
+    background-repeat: no-repeat;
+    background-image: url(./public/educational.svg);
+    background-size: 8%;
+}
+
+.edu:nth-child(even) .content {
+    background-position: 5% 8%;
+}
+
+.edu:nth-child(odd) .content {
+    background-position: 95% 8%;
+}
+
+/* .edu:nth-child(even) .content {
+    background-position: 30px 30px;
+} */
+
+/* Alignement des titres vers l'axe */
+.box:nth-child(even) h4, .box:nth-child(even) h3 {
+    text-align: right;
+}
+
+.content p {
+    /* text-align: justify; */
+}
+
+.content h3 {
+    font-size: 25px;
+    font-weight: 700;
+    /* color: var(--secondary-text-color); */
+    line-height: 40px;
+}
+
+.content .location img {
+    /* background: red; */
+    height: 20px;
+    width: 20px;
+}
+
+
+.content .location {
+    display: flex;
+    align-items: center;
+    gap: 8px
+}
+
+.box:nth-child(even) .content .location {
+    justify-content: flex-end;
+}
+
+.box:nth-child(odd) .content .location {
+    justify-content: flex-start;
+}
+
+
+
+
+/* Extremités rondes des lignes */
+.rond{
+    position: absolute;
+    /* display: block; */
+    height: 1rem;
+    width: 1rem;
+    border-radius: 50%;
+    background-color: white;
+    left:50%;
+    transform: translateX(-50%);
+}
+
+.r1{top: 200px}
+.r2{top: 500px}
+
+@media only screen and (max-width : 768px) {
+
+    .box .content{
+        width:100%;
+    }
+
+    .box .content h3, .box .content h4{
+        text-align: center;
+    }
+
+    .box-logo-container{
+        display: none;
+    }
+
+    .box:nth-child(even) .content .location, .box:nth-child(odd) .content .location {
+        justify-content: center;
+    }
+
+    .edu:nth-child(odd) .content, .edu:nth-child(even) .content {
+        background-position: 95% 95%;
+    }
+    
+
+}
